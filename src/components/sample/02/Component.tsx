@@ -1,5 +1,5 @@
 import style from '@/styles/Components/sample/02/component.module.scss'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 type State = {
     text: string
@@ -11,10 +11,17 @@ export function Sample02Component(props: State) {
         text: props.text
     })
 
+    useEffect(() => {
+        setState({
+            ...state,
+            text: props.text
+        })
+    }, [props])
+
     return (
         <>
             <div className={style.compoWrap}>
-                <p>{state.text}</p>
+                <p className={style.text}>{state.text}</p>
             </div>
         </>
     )
