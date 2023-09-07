@@ -11,8 +11,8 @@ export default function Home() {
     <>
       <div className={style.wrap}>
         <ul>
-          <li><Link href={'./sample/01'}></Link></li>
-          <li><Link href={'./sample/02'}></Link></li>
+          <li><Link href={'./sample/01'}>sample01 カウントアップボタン</Link></li>
+          <li><Link href={'./sample/02'}>sample02 Componentの使い方</Link></li>
         </ul>
       </div>
     </>
