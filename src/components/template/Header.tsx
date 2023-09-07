@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <>
             <header className={style.head}>
-                <SiReact />
+                <SiReact fontSize={'2rem'} className={style.icon} />
                 <h1>ReactTemplatePage</h1>
             </header>
         </>
