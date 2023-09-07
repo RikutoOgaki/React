@@ -15,7 +15,7 @@ export default function Header(props: State) {
     return (
         <>
             <header className={style.head}>
-                <SiReact fontSize={'2rem'} className={style.icon} />
+                <SiReact fontSize={'2rem'} color='#ffffff' className={style.icon} />
                 <h1>{state.title}</h1>
             </header>
         </>
