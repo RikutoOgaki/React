@@ -1,4 +1,10 @@
 #wrap {
     width: 100%;
     height: 100%;
+
+    .list {
+        & .listItem {
+            color: #3b86cb;
+        }
+    }
 }
