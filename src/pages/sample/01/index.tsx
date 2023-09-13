@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Header from '@/components/template/Header'
 import style from '@/styles/sample/01/index.module.scss'
 
 export default function Sample01() {
@@ -7,6 +8,7 @@ export default function Sample01() {
 
     return (
         <>
+            <Header title={'カウントアップボタン'} />
             <div className={style.wrap}>
                 <h1>{state}</h1>
                 <div className={style.buttonBox}>
