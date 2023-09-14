@@ -1,0 +1,26 @@
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .btnBox {
+        & .text {
+            font-size: 5rem;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin: .5rem 0;
+        }
+
+        & .btn {
+            width: 10rem;
+            height: 4rem;
+            border-radius: 5px;
+            background-color: #3b86cb;
+            color: #ffffff;
+        }
+    }
+}
