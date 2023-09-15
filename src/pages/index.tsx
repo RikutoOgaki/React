@@ -5,8 +5,6 @@ import style from '@/styles/home.module.scss'
 import Header from '@/components/template/Header'
 import Link from 'next/link'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
     <>
