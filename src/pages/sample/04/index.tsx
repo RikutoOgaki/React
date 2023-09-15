@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import style from '@/styles/sample/04/index.module.scss'
 
 export default function Sample04() {
 
@@ -6,10 +7,10 @@ export default function Sample04() {
 
     return (
         <>
-            <div>
-                <p>{state}</p>
-                <button>プラス</button>
-                <button>マイナス</button>
+            <div className={style.wrap}>
+                <div className={style.calc}>
+
+                </div>
             </div>
         </>
     )
