@@ -5,7 +5,7 @@ export async function getTime(dispatch: React.Dispatch<Action>) {
     dispatch({ actionType: 'GET_TIME_REQUEST' })
 
     try {
-        const res = await fetch('/src/pages/api/getTime.ts', {
+        const res = await fetch('/api/getTime', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
