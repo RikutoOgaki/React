@@ -1,5 +1,5 @@
 import { useReducer, useEffect } from 'react'
-import { getTime } from './actionCreater'
+import { getTime } from './actioncreater'
 import { reducer } from './reducer'
 import style from '@/styles/sample/04/index.module.scss'
 
