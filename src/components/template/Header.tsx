@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import style from '@/styles/Components/template/header.module.scss'
-import { SiReact } from 'react-icons/si'
+import { SiReact, SiJavascript } from 'react-icons/si'
 
 type State = {
     title: string
@@ -15,7 +15,7 @@ export default function Header(props: State) {
     return (
         <>
             <header className={style.head}>
-                <SiReact fontSize={'2rem'} color='#ffffff' className={style.icon} />
+                <SiReact fontSize={'2rem'} color='blue' className={style.icon} />
                 <h1>{state.title}</h1>
             </header>
         </>
