@@ -16,6 +16,7 @@ export default function Home() {
           <li className={style.listItem}><Link href={'./sample/03'}>sample03 useEffectの使い方</Link></li>
           <li className={style.listItem}><Link href={'./sample/04'}>sample04 Reducerについて(個人的な内容)</Link></li>
           <li className={style.listItem}><Link href={'./sample/05'}>sample05 (個人的な内容)</Link></li>
+          <li className={style.listItem}><Link href={'./sample/06'}>sample06 (個人的な内容)</Link></li>
         </ul>
       </div>
     </>
