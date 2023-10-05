@@ -29,5 +29,16 @@
         }
     }
 
-    .taskBox {}
+    .taskBox {
+        width: 20rem;
+        height: 20rem;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+
+        .taskNum {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
 }
