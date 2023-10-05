@@ -3,6 +3,7 @@ import style from '@/styles/sample/05/index.module.scss'
 
 export default function Sample05() {
 
+    // 式や計算結果を入れるstate
     const [result, setResult] = useState('')
 
     // 計算する数字配列
