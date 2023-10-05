@@ -36,17 +36,15 @@ export default function Sample05() {
                             <button
                                 key={idx}
                                 className={style.btn}
-                                label={v}
                                 onClick={(e) => handleButtonClick(e)}
-                            />
+                            >{v}</button>
                         )}
                         {calcArray.map((v, idx2) =>
                             <button
                                 key={idx2}
                                 className={style.btn}
-                                label={ }
                                 onClick={(e) => handleButtonClick(e)}
-                            />
+                            >{v}</button>
                         )}
                     </div>
                 </div>
