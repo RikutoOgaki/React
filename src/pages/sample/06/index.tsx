@@ -28,10 +28,11 @@ export default function Sample06() {
                         className={style.btn}
                         onClick={() => setState({
                             ...state,
-                            task: '',
                             taskArray: [
-
-                            ]
+                                ...state.taskArray,
+                                state.task
+                            ],
+                            task: ''
                         })}
                     >追加</button>
                 </div>
@@ -39,7 +40,12 @@ export default function Sample06() {
                     {state.taskArray.map((v, idx) =>
                         <div key={idx} className={style.taskNum}>
                             <p>{v}</p>
-                            <button >削除</button>
+                            <button
+                                onClick={() => setState({
+                                    ...state,
+                                    taskArray: state.taskArray.filter((x, idx2) => idx !== idx2)
+                                })}
+                            >削除</button>
                         </div>
                     )}
                 </div>
