@@ -17,7 +17,7 @@ export default function Home() {
           <li className={style.listItem}><Link href={'./sample/04'}>sample04 Reducerについて(個人的な内容)</Link></li>
           <li className={style.listItem}><Link href={'./sample/05'}>sample05 (計算機)</Link></li>
           <li className={style.listItem}><Link href={'./sample/06'}>sample06 (ToDoList)</Link></li>
-          <li className={style.listItem}><Link href={'./sample/07'}>sample07 (API)</Link></li>
+          <li className={style.listItem}><Link href={'./sample/07'}>sample07 (ちょっとフロント)</Link></li>
         </ul>
       </div>
     </>
