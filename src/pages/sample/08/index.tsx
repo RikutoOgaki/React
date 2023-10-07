@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import style from '@/styles/sample/08/index.module.scss'
 
 type State = {
 }
