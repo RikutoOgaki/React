@@ -15,7 +15,8 @@ export function Modal(props: Props, { children }: Props) {
         <>
             <div
                 style={{ width: '100%', height: '100vh', backgroundColor: 'tomato' }}
-                onClick={() => setState({ ...state, flg: false })}
+                onClick={() => {
+                }}
             >
                 <div>
                     {children}

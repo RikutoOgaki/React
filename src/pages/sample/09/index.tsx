@@ -26,7 +26,9 @@ export default function Sampel09() {
                     onClick={() => setState({ ...state, flg: true })}
                 >Click</button>
                 {state.flg &&
-                    <Modal flg={state.flg}>
+                    <Modal
+                        flg={state.flg}
+                    >
                         <div>
                             <h1>test表示</h1>
                         </div>
