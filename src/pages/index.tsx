@@ -20,6 +20,7 @@ export default function Home() {
           <li className={style.listItem}><Link href={'./sample/07'}>sample07 (ちょっとフロント)</Link></li>
           <li className={style.listItem}><Link href={'./sample/08'}>sample08 (inputの入力数値で計算する)</Link></li>
           <li className={style.listItem}><Link href={'./sample/09'}>sample09 (モーダル表示)</Link></li>
+          <li className={style.listItem}><Link href={'./sample/10'}>sample010 (吹き出し追加)</Link></li>
         </ul>
       </div>
     </>
