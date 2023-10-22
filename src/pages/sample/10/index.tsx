@@ -18,6 +18,7 @@ export default function ChatView() {
         y: 0
     })
 
+    // チャットの吹き出しを数でもつ配列データ
     const ChatArray: Array<string> = []
 
     return (
