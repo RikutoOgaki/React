@@ -29,7 +29,7 @@ export default function ChatView() {
                         <div
                             key={idx}
                             className={style.chat}
-                            style={{}}
+                            style={{ position: 'absolute', top: `${posi.y}px`, left: `${posi.x}px` }}
                         >{v}</div>
                     )}
                 </div>
