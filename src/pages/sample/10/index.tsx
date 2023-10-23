@@ -33,13 +33,19 @@ export default function ChatView() {
                         >{v}</div>
                     )}
                 </div>
-                <div>
+                <div className={style.inputBox}>
                     <input type="text" className={style.input} value={state.chattext} />
                     <button
-                    // onClick={ }
+                        // 追加するボタン
+                        onClick={() => {
+
+                        }}
                     >追加</button>
                     <button
-                    // onClick={ }
+                        // 表示されているチャットをすべて削除するボタン
+                        onClick={() => {
+
+                        }}
                     >すべて削除</button>
                 </div>
             </div>
