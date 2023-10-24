@@ -37,6 +37,7 @@ export default function ChatView() {
                     <input type="text" className={style.input} value={state.chattext} />
                     <button
                         // 追加するボタン
+                        // めんどくさいので関数にするかも。。。
                         onClick={() => {
 
                         }}
