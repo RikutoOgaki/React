@@ -11,14 +11,6 @@ export default function Sampel09() {
         flg: false
     })
 
-    const ModalChildren = () => {
-        return (
-            <div>
-                <h1>anyだけどtest</h1>
-            </div>
-        )
-    }
-
     return (
         <>
             <div>
@@ -30,7 +22,7 @@ export default function Sampel09() {
                         flg={state.flg}
                     >
                         <div>
-                            <h1>test表示</h1>
+                            test表示
                         </div>
                     </Modal>
                 }
