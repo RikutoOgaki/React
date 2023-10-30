@@ -22,6 +22,7 @@ export default function Home() {
           <li className={style.listItem}><Link href={'./sample/09'}>sample09 (モーダル表示)</Link></li>
           <li className={style.listItem}><Link href={'./sample/10'}>sample010 (吹き出し追加)</Link></li>
           <li className={style.listItem}><Link href={'./sample/11'}>sample011 Menu作成</Link></li>
+          <li className={style.listItem}><Link href={'./sample/12'}>sample012 404で遊んでみた</Link></li>
         </ul>
       </div>
     </>
