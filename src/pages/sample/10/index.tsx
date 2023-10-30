@@ -5,6 +5,16 @@ type State = {
     chattext: string
 }
 
+type ChatTextArray = {
+    chats: Array<ChatText>
+}
+
+type ChatText = {
+    text: string,
+    x: number,
+    y: number
+}
+
 export default function ChatView() {
 
     const elementRef = useRef<HTMLDivElement | null>(null)
@@ -32,18 +42,20 @@ export default function ChatView() {
     })
 
     // chatの位置を持っておくデータ
-    const [ChatArray, setChatArray] = useState([
-        {
-            text: 'ぽこ',
-            x: 30,
-            y: 40
-        },
-        {
-            text: 'ぽこ',
-            x: 90,
-            y: 120
-        },
-    ])
+    const [ChatArray, setChatArray] = useState<ChatTextArray>({
+        chats: [
+            {
+                text: 'ぽこ',
+                x: 30,
+                y: 40
+            },
+            {
+                text: 'ぽこ',
+                x: 90,
+                y: 120
+            },
+        ]
+    })
 
     // チャットの吹き出しを数でもつ配列データ
 
@@ -72,7 +84,7 @@ export default function ChatView() {
         <>
             <div className={style.wrap}>
                 <div ref={elementRef} className={style.chatView}>
-                    {ChatArray.map((v, idx) =>
+                    {ChatArray.chats.map((v, idx) =>
                         <div
                             key={idx}
                             className={style.chat}
