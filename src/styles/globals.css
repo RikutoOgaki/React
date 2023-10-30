@@ -9,9 +9,9 @@ a{
   text-decoration: none;
 }
 
-a:hover{
+/* a:hover{
   color: #3b86cb;
-}
+} */
 
 button{
   background-color: transparent;
