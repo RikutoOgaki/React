@@ -7,7 +7,7 @@ type State = {
 
 export function Sample02Component(props: State) {
 
-    const [state, setState] = useState({
+    const [state, setState] = useState<State>({
         text: props.text
     })
 
