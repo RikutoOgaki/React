@@ -4,9 +4,9 @@ import style from '@/styles/sample/14/index.module.scss'
 
 export default function Sample14() {
 
-    const [state, setState] = useState(0)
+    const [state, setState] = useState(1)
 
-    const array = [0, 1, 2]
+    const array = [1, 2, 3]
 
     // １つ目のページ
     const First = () => {
@@ -18,8 +18,8 @@ export default function Sample14() {
                         onClick={() => {
                             setState(state + 1)
 
-                            if (state === 2) {
-                                setState(0)
+                            if (state === 3) {
+                                setState(1)
                             }
                         }}
                     >次へ</button>
@@ -38,8 +38,8 @@ export default function Sample14() {
                         onClick={() => {
                             setState(state + 1)
 
-                            if (state === 2) {
-                                setState(0)
+                            if (state === 3) {
+                                setState(1)
                             }
                         }}
                     >次へ</button>
@@ -58,8 +58,8 @@ export default function Sample14() {
                         onClick={() => {
                             setState(state + 1)
 
-                            if (state === 2) {
-                                setState(0)
+                            if (state === 3) {
+                                setState(1)
                             }
                         }}
                     >次へ</button>
@@ -79,16 +79,16 @@ export default function Sample14() {
                             <div
                                 key={idx}
                                 className={state === v ? style.circleOn : style.circle}
-                            >{v}</div>
+                            ></div>
                         )}
                     </div>
                 </div>
                 <div className={style.page}>
                     <div className={style.box}>
                         {
-                            state === 0 ? <First /> :
-                                state === 1 ? <Secound /> :
-                                    state === 2 ? <Therd /> : undefined
+                            state === 1 ? <First /> :
+                                state === 2 ? <Secound /> :
+                                    state === 3 ? <Therd /> : undefined
                         }
                     </div>
                 </div>
