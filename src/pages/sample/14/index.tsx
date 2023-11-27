@@ -1,7 +1,98 @@
+// １３の内容を強化して、ページが遷移しているように見せる
+import { useState, useEffect } from 'react'
+import style from '@/styles/sample/14/index.module.scss'
+
 export default function Sample14() {
+
+    const [state, setState] = useState(0)
+
+    const array = [0, 1, 2]
+
+    // １つ目のページ
+    const First = () => {
+        return (
+            <>
+                <div className={style.box1}>
+                    <h1>First</h1>
+                    <button
+                        onClick={() => {
+                            setState(state + 1)
+
+                            if (state === 2) {
+                                setState(0)
+                            }
+                        }}
+                    >次へ</button>
+                </div>
+            </>
+        )
+    }
+
+    // ２つ目のページ
+    const Secound = () => {
+        return (
+            <>
+                <div className={style.box2}>
+                    <h1>Secound</h1>
+                    <button
+                        onClick={() => {
+                            setState(state + 1)
+
+                            if (state === 2) {
+                                setState(0)
+                            }
+                        }}
+                    >次へ</button>
+                </div>
+            </>
+        )
+    }
+
+    // ３つ目のページ
+    const Therd = () => {
+        return (
+            <>
+                <div className={style.box3}>
+                    <h1>Therd</h1>
+                    <button
+                        onClick={() => {
+                            setState(state + 1)
+
+                            if (state === 2) {
+                                setState(0)
+                            }
+                        }}
+                    >次へ</button>
+                </div>
+            </>
+        )
+    }
+
+
+
     return (
         <>
-            <div></div>
+            <div className={style.wrap}>
+                <div className={style.head}>
+                    <div className={style.circleBox}>
+                        {array.map((v, idx) =>
+                            <div
+                                key={idx}
+                                className={state === v ? style.circleOn : style.circle}
+                            >{v}</div>
+                        )}
+                    </div>
+                </div>
+                <div className={style.page}>
+                    <div className={style.box}>
+                        {
+                            state === 0 ? <First /> :
+                                state === 1 ? <Secound /> :
+                                    state === 2 ? <Therd /> : undefined
+                        }
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
