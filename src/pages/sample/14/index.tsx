@@ -49,7 +49,7 @@ export default function Sample14() {
     }
 
     // ３つ目のページ
-    const Therd = () => {
+    const Third = () => {
         return (
             <>
                 <div className={style.box3}>
@@ -88,7 +88,7 @@ export default function Sample14() {
                         {
                             state === 1 ? <First /> :
                                 state === 2 ? <Secound /> :
-                                    state === 3 ? <Therd /> : undefined
+                                    state === 3 ? <Third /> : undefined
                         }
                     </div>
                 </div>
