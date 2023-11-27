@@ -78,3 +78,17 @@
     flex-direction: column;
     background-color: #a742a7;
 }
+
+.btn {
+    width: 10rem;
+    height: 3rem;
+    background-color: #ffffff;
+    color: #262626;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        background-color: #535353;
+        color: #ffffff;
+    }
+}

@@ -8,13 +8,30 @@ export default function Sample14() {
 
     const array = [1, 2, 3]
 
+    const Button = () => {
+        return (
+            <>
+                <button
+                    className={style.btn}
+                    onClick={() => {
+                        setState(state + 1)
+
+                        if (state === 3) {
+                            setState(1)
+                        }
+                    }}
+                >次へ</button>
+            </>
+        )
+    }
+
     // １つ目のページ
     const First = () => {
         return (
             <>
                 <div className={style.box1}>
                     <h1>First</h1>
-                    <button
+                    {/* <button
                         onClick={() => {
                             setState(state + 1)
 
@@ -22,7 +39,8 @@ export default function Sample14() {
                                 setState(1)
                             }
                         }}
-                    >次へ</button>
+                    >次へ</button> */}
+                    <Button />
                 </div>
             </>
         )
@@ -34,7 +52,7 @@ export default function Sample14() {
             <>
                 <div className={style.box2}>
                     <h1>Secound</h1>
-                    <button
+                    {/* <button
                         onClick={() => {
                             setState(state + 1)
 
@@ -42,7 +60,8 @@ export default function Sample14() {
                                 setState(1)
                             }
                         }}
-                    >次へ</button>
+                    >次へ</button> */}
+                    <Button />
                 </div>
             </>
         )
@@ -54,7 +73,7 @@ export default function Sample14() {
             <>
                 <div className={style.box3}>
                     <h1>Therd</h1>
-                    <button
+                    {/* <button
                         onClick={() => {
                             setState(state + 1)
 
@@ -62,11 +81,14 @@ export default function Sample14() {
                                 setState(1)
                             }
                         }}
-                    >次へ</button>
+                    >次へ</button> */}
+                    <Button />
                 </div>
             </>
         )
     }
+
+
 
 
 
@@ -90,6 +112,7 @@ export default function Sample14() {
                                 state === 2 ? <Secound /> :
                                     state === 3 ? <Third /> : undefined
                         }
+                        <Button />
                     </div>
                 </div>
             </div>
