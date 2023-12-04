@@ -26,6 +26,7 @@ export default function Home() {
           <li className={style.listItem}><Link href={'./sample/12'}>sample013 現状どこを見ているかの表示</Link></li>
           <li className={style.listItem}><Link href={'./sample/14'}>sample014 画面の切り替え表示</Link></li>
           <li className={style.listItem}><Link href={'./sample/15'}>sample015 カウントダウンタイマー</Link></li>
+          <li className={style.listItem}><Link href={'./sample/15'}>sample? 404ページの表示 path:./sample/17</Link></li>
         </ul>
       </div>
     </>

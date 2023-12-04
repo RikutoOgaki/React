@@ -19,9 +19,6 @@ export default function Smaple15() {
     console.log(dayjs(calcTime).format('mm:ss'));
 
 
-
-
-
     return (
         <>
             <div className={style.wrap}>

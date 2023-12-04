@@ -12,10 +12,8 @@ function Custom404() {
       justifyContent: 'center',
       alignItems: 'center'
     }}>
-      <Image src="/img/404be.jpg" alt="Custom 404 Image" width={600} height={500} />
-      <h1>404 - Page Not Found</h1>
-      <p>Sorry, the page you're looking for does not exist.</p>
-      <Link href="/" style={{ textDecoration: 'underline' }}>Go back to the home page</Link>
+      <img src="/img/404be.jpg" alt="Custom 404 Image" style={{ width: '100%', height: '100vh' }} />
+      {/* <Link href="/" style={{ textDecoration: 'underline' }}>Go back to the home page</Link> */}
     </div>
   )
 }
