@@ -14,8 +14,10 @@ export default function Smaple15() {
     // 指定の時刻
     const targetTime = dayjs('2023-12-31 23:59:59')
 
+
     // 残り時間の計算
     const calcTime = targetTime.diff(now)
+
 
 
     let [days, setDays] = useState(0)
@@ -56,6 +58,7 @@ export default function Smaple15() {
     return (
         <>
             <div className={style.wrap}>
+                <p>新年まで残り、</p>
                 <p>{days}日{hour}時間{minits}分{second}秒</p>
             </div>
         </>
