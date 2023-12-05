@@ -43,11 +43,12 @@ export default function Smaple15() {
     useEffect(() => {
 
         setDays(Number(dayjs(calcTime).format('DD')))
-        setHour(Number(dayjs(calcTime).format('HH')))
+        setHour(Number(dayjs(calcTime).format('HH')) - 9)
         setMinits(Number(dayjs(calcTime).format('mm')))
         setSecond(Number(dayjs(calcTime).format('ss')))
 
     }, [days, hour, minits, second])
+
 
     useEffect(() => {
         const downTImer = setInterval(down, 1000)
