@@ -1,0 +1,92 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .daikei {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .2rem;
+        width: 100%;
+        height: 100vh;
+
+        .box1 {
+            width: 3rem;
+            height: 3rem;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 3rem solid tomato;
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            width: 3rem;
+            height: 3rem;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 3rem solid skyblue;
+            box-sizing: border-box;
+        }
+    }
+
+    .heikou {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .box3 {
+            width: 6rem;
+            height: 5rem;
+            transform: skewX(-45deg);
+            background-color: blue;
+
+        }
+
+        .box4 {
+            width: 6rem;
+            height: 5rem;
+            transform: skewX(-45deg);
+            background: linear-gradient(blue, skyblue);
+        }
+    }
+
+    .graph {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            border-radius: 50%;
+            background-image:
+                conic-gradient(#FFE013 0deg 100deg,
+                    #91D4E1 100deg 180deg,
+                    #0B62D4 180deg 360deg);
+
+            .top {
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+                background-color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    }
+}
