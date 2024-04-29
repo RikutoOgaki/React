@@ -1,0 +1,71 @@
+.wrap {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    .particle1 {
+        position: absolute;
+        left: 2rem;
+        width: 3rem;
+        height: 3rem;
+        border: 3px solid;
+        border-image: linear-gradient(to top right, #7f7fff, #7fff7f) 1;
+        animation: upBox1 10s infinite;
+
+        @keyframes upBox1 {
+            0% {
+                bottom: -4rem;
+            }
+
+            100% {
+                bottom: 10rem;
+                transform: rotateX(45deg) rotateY(180deg);
+                opacity: 0;
+            }
+        }
+    }
+
+    .particle2 {
+        position: absolute;
+        left: 5rem;
+        width: 3rem;
+        height: 3rem;
+        border: 3px solid;
+        border-image: linear-gradient(to top right, #7f7fff, #7fff7f) 1;
+        animation: upBox2 10s infinite;
+
+        @keyframes upBox2 {
+            0% {
+                bottom: -4rem;
+            }
+
+            100% {
+                bottom: 10rem;
+                transform: rotateX(180deg) rotateY(180deg);
+                opacity: 0;
+            }
+        }
+    }
+
+    .particle3 {
+        position: absolute;
+        left: 9rem;
+        width: 3rem;
+        height: 3rem;
+        border: 3px solid;
+        border-image: linear-gradient(to top right, #7f7fff, #7fff7f) 1;
+        animation: upBox3 10s infinite;
+
+        @keyframes upBox3 {
+            0% {
+                bottom: -4rem;
+            }
+
+            100% {
+                bottom: 10rem;
+                transform: rotateX(180deg) rotateY(900deg);
+                opacity: 0;
+            }
+        }
+    }
+}
